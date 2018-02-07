@@ -1,0 +1,26 @@
+package Basics;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class locator1 {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.chrome.driver","C://chromedriver.exe");
+
+		WebDriver driver=new ChromeDriver();
+		driver.get("http://facebook.com");
+		driver.findElement(By.id("email")).sendKeys("test123@test.com");
+		driver.findElement(By.name("pass")).sendKeys("test");
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//*[@id=\"u_0_2\"]")).click();
+		//driver.findElement(By.id("royal_login_button")).click();
+		
+		driver.findElement(By.partialLinkText("Zarejestruj")).click();
+	}
+	
+
+}
