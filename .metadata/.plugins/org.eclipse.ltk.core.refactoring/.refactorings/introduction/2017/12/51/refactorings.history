@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Basics.Actions&apos; to &apos;AjaxActions&apos;&#x0D;&#x0A;- Original project: &apos;introduction&apos;&#x0D;&#x0A;- Original element: &apos;Basics.Actions&apos;&#x0D;&#x0A;- Renamed element: &apos;Basics.AjaxActions&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Actions&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;Basics{Actions.java[Actions" matchStrategy="1" name="AjaxActions" qualified="false" references="true" similarDeclarations="false" stamp="1513629266871" textual="false" version="1.0"/>
+</session>

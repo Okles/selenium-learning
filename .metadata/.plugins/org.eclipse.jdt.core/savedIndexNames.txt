@@ -1,0 +1,22 @@
+INDEX VERSION 1.130+C:\Users\Okles\eclipse-workspace\.metadata\.plugins\org.eclipse.jdt.core
+2973440165.index
+2101396284.index
+317131036.index
+3308012445.index
+4114945268.index
+860828949.index
+3157782132.index
+265263807.index
+2966911352.index
+210269385.index
+3376554864.index
+784004549.index
+311515715.index
+3931170297.index
+2910767211.index
+1700358079.index
+3900819494.index
+3241871623.index
+2173901351.index
+3909246965.index
+1344173893.index
