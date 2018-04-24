@@ -27,6 +27,7 @@ public class javaScriptAutoSuggestiveDropdowns {
 		
 		driver.findElement(By.xpath("//*[@id='fromPlaceName']")).click();
 		driver.findElement(By.xpath("//input[@id='fromPlaceName']")).sendKeys("BENG");
+		Thread.sleep(2000);
 		driver.findElement(By.xpath("//input[@id='fromPlaceName']")).sendKeys(Keys.DOWN);
 		driver.findElement(By.xpath("//input[@id='fromPlaceName']")).sendKeys(Keys.DOWN);
 		System.out.println(driver.findElement(By.xpath("//*[@id='fromPlaceName']")).getText());
@@ -38,6 +39,32 @@ public class javaScriptAutoSuggestiveDropdowns {
 		String text = (String) js.executeScript(script);
 		System.out.println(text);
 		
+		//BENGALURU INTERNATIONAL AIRPORT
+		int i=0;
+		while(!text.equalsIgnoreCase("BENGALURU INTERNATION AIPORT"))
+		{
+			i++;
+			driver.findElement(By.xpath("//input[@id='fromPlaceName']")).sendKeys(Keys.DOWN);
+			
+			text = (String) js.executeScript(script);
+			System.out.println(text);
+			
+			if (i>10)
+			{
+				break;
+			}
+			
+			}
+		if(i>10)
+		{
+			System.out.println("Element not found!");
+		}
+		else
+		{
+			System.out.println("Element found!");
+		}
+		}
+		
 	}
+ 
 
-}
